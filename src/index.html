@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <title>Gauss Eraser</title>
+</head>
+
+<body>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .wrapper {
+      overflow: hidden;
+      position: relative;
+    }
+
+    #blur-canvas {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 97;
+    }
+
+    #clear-canvas {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 96;
+    }
+  </style>
+  <div id="wrapper" class="wrapper">
+    <canvas id="blur-canvas"></canvas>
+    <canvas id="clear-canvas"></canvas>
+  </div>
+</body>
+
+</html>
